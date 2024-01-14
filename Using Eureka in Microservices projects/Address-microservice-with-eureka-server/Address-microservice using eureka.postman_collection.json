@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "7492a2d7-6473-46c0-b3b1-45d39f44be0f",
+		"name": "Address-microservice using eureka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18863619"
+	},
+	"item": [
+		{
+			"name": "createAddress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"street\":\"Madhya Street\",\r\n    \"city\":\"koilkuntla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/address/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"address",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAddressById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/address/getById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"address",
+						"getById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

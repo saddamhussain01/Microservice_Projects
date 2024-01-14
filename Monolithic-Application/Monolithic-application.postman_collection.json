@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "0b6e3045-6a89-407c-ad0d-f0a23784d479",
+		"name": "Monolithic-application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18863619"
+	},
+	"item": [
+		{
+			"name": "createStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"saddam\",\r\n    \"lastName\": \"Hussain\",\r\n    \"email\" : \"saddam@gmail.com\",\r\n    \"street\" : \"Madhya street\",\r\n    \"city\": \"Koilkuntla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/student/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080//api/student/getById/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"api",
+						"student",
+						"getById",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

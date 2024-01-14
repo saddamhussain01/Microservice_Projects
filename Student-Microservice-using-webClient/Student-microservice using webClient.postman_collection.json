@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "2e12fc65-26ea-40f7-ab88-442164a60abe",
+		"name": "Student-microservice using webClient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18863619"
+	},
+	"item": [
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "createStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"saddam\",\r\n    \"lastName\":\"hussain\",\r\n    \"email\":\"saddam@gmail.com\",\r\n    \"addressId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/student/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
